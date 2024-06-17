@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;>
+<title>Página 3</title>
+</head>
+<body>
+<div class="w3-container">
+<h1>Página 3</h1>
+<div class="w3-content w3-display-container">
+<img class="mySlides" src="https://cdn.mos.cms.futurecdn.net/QB59KgqbZGoiZm8efybnEP-1200-80.jpg" style="width:100%">
+<img class="mySlides" src="https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/wQYnx73VVaaHKanoA4EI44j6KxwO4eAj.png?w=440&thumb=false" style="width:100%">
+<img class="mySlides" src="https://static.wikia.nocookie.net/liberproeliis/images/b/b9/Sadie_official_art.webp/revision/latest/scale-to-width-down/1200?cb=20230725041113&path-prefix=pt-br" style="width:100%">
+<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+var i;
+var x = document.getElementsByClassName("mySlides");
+if (n > x.length) {slideIndex = 1}
+if (n < 1) {slideIndex = x.length}
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+x[slideIndex-1].style.display = "block";
+}
+</script>
+<a href="index.html">pagina 1</a>
+</body>
+</html>
